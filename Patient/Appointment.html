@@ -1,0 +1,80 @@
+﻿<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Appointment</title>
+    <link rel="stylesheet" href="https://amsul.ca/pickadate.js/css/main.css">
+    <link rel="stylesheet" href="https://amsul.ca/pickadate.js/vendor/pickadate/lib/themes/default.css" id="theme_base">
+    <link rel="stylesheet" href="https://amsul.ca/pickadate.js/vendor/pickadate/lib/themes/default.date.css" id="theme_date">
+    <link rel="stylesheet" href="https://amsul.ca/pickadate.js/vendor/pickadate/lib/themes/default.time.css" id="theme_time">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://amsul.ca/pickadate.js/vendor/pickadate/lib/picker.js"></script>
+    <script src="https://amsul.ca/pickadate.js/vendor/pickadate/lib/picker.date.js"></script>
+    <script src="https://amsul.ca/pickadate.js/vendor/pickadate/lib/picker.time.js"></script>
+    
+    <link href="Content/Appointment.css" rel="stylesheet" />
+</head>
+<body>
+
+    <nav>
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" style="margin-right: 10px; margin-top:30px;">
+        </a>
+        <div class="navbar-container">
+            <div class="logo-container">
+                <a id="welcome" href="#">Welcome</a>
+            </div>
+            <div class="navbar-container">
+                <ul class="nav-links">
+                    <li><a href="PatientPortal.html">Patient</a></li>
+                    <li><a href="Health.html">Health</a></li>
+                    <li><a href="Appointment.html">Appointment </a></li>
+
+                </ul>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </div>
+
+            
+
+        </div>
+    </nav>
+
+
+
+    <div class="appointment-form">
+        <form>
+            <div class="form-group">
+                <label for="name">Your Name: </label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address: </label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+
+            <div class="form-group">
+                <label for="notes">Notes: </label>
+                <textarea id="notes" name="notes"></textarea>
+
+            </div>
+
+        </form>
+        <label for="notes">Select Date: </label>
+        <input type="text" value="" id="pickadate" class="pickadate" />
+        <label for="notes">Select Time: </label>
+        <input type="text" value="" id="pickatime" class="pickatime" />
+
+        <button type="submit" id="appointment-btn"> Book Appointment  </button>
+
+
+    </div>
+
+
+
+    <script src="Scripts/appointment.js"></script>
+</body>
+</html>

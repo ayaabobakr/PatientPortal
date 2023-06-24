@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Patient Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Content/patient.css" rel="stylesheet" />
+    <script src="Scripts/patient.js"></script>
+</head>
+<body>
+    <nav>
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" style="margin-right: 10px; margin-top:30px;">
+        </a>
+        <div class="navbar-container">
+            <div class="logo-container">
+                <a  id="welcome" href="#">Welcome</a>
+            </div>
+            <div class="navbar-container">
+                <ul class="nav-links">
+                    <li><a href="PatientPortal.html">Patient</a></li>
+                    <li><a href="Health.html">Health</a></li>
+                    <li><a href="Appointment.html">Appointment </a></li>
+
+
+                </ul>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </div>
+
+            
+
+        </div>
+    </nav>
+
+    <div class="patient-container">
+        <div class="personal-info">
+            <h2>Personal Information</h2>
+
+            <!--<img src="C:\Users\User\source\repos\WebApplication2\WebApplication2\images\logo.jpg" alt="User photo">- patient photo---->
+
+            <h5>National ID:</h5>
+            <div class="NationalID" id="national-id"></div>
+
+            <h5>Name:</h5>
+            <div class="Name" id="name-id"></div>
+
+            <h5>Email:</h5>
+            <div class="Email" id="email-id"></div>
+
+            <h5>Date Of Birth:</h5>
+            <div class="Age" id="age-id"></div>
+
+            <h5>Gender:</h5>
+            <div class="Gender" id="gender-id"></div>
+
+            <h5>Address:</h5>
+            <div class="Address" id="address-id"></div>
+
+            <h5>Phone:</h5>
+            <div class="Phone" id="phone-id"></div>
+
+
+
+
+        </div>
+
+
+
+        <div class="health-info">
+            <h2>Health Information</h2>
+            <h5>Symptoms:</h5>
+            <div class="symptoms" id="symp-id">Fever, headache, cough</div>
+            <h5>Medication Allergies:</h5>
+            <div class="Allergies" id="allergies-id">List of medication allergies</div>
+            <h5>Eye report:</h5>
+            <div class="eyereport">Last eye report done</div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>
